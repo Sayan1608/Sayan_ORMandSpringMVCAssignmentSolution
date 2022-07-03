@@ -14,9 +14,9 @@
 			<legend>Login Form</legend>
 			<form action="${pageContext.request.contextPath}/login_action" method="POST">
 			
-				<input type="text" name="username" placeholder="UserName" autocomplete="off"/><br/>
+				<input type="text" name="username" placeholder="UserName" autocomplete="off"/><br/><br>
 				
-				<input type="password" name="password" placeholder="password"/><br/>
+				<input type="password" name="password" placeholder="Password"/><br/><br>
 				
 				<input type="submit" value="Login"/>
 			</form>

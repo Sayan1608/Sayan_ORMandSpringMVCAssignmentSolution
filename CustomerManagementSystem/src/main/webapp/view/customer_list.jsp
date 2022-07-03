@@ -11,6 +11,8 @@
 </head>
 <body>
 	<jsp:include page="header.jsp" />
+	
+	<%if (session.getAttribute("username") != null) { %>
 
 	<center>
 		<h3>Students List</h3>
@@ -29,12 +31,13 @@
 					<td>${customer.lastName}</td>
 					<td>${customer.email}</td>
 					<td>
-						<a href="edit?id=${customer.id}">Edit</a> | 
-						<a href="delete?id=${customer.id}">Delete</a>
+						<button><a href="edit?id=${customer.id}" style="text-decoration: none">Edit</a></button> | 
+						<button><a href="delete?id=${customer.id}" style="text-decoration: none">Delete</a></button>
 					</td>
 				</tr>
 			</jstlc:forEach>
 		</table>
 	</center>
+	<%} %>
 </body>
 </html>

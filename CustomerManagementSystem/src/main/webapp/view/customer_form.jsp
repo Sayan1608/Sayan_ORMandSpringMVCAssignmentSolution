@@ -13,11 +13,11 @@
 	
 		<input type="hidden" name="id" value="${Customer.id}"><br>
 		<input type="text" name="firstName" value="${Customer.firstName}"
-			placeholder="First Name"><br>
+			placeholder="First Name"><br><br>
 			 <input type="text"	name="lastName" value="${Customer.lastName}"
-			placeholder="Last Name"><br> 
-			<input type="text" name="email" value="${Customer.email}" placeholder="email"><br>
-		<input type="submit" value="submit">
+			placeholder="Last Name"><br><br>
+			<input type="text" name="email" value="${Customer.email}" placeholder="email"><br><br>
+		<input type="submit" value="save">
 
 	</form>
 
